@@ -5,7 +5,7 @@ import 'dart:async';
 class CryptoUtil {
 
   String APIENDPOINT = "https://min-api.cryptocompare.com/data/price";
-  String APIKEY = "eae6f5433e8ffbf50dc0a623f53e053e99aba9509d0264ccf1bfe92ae2890214";
+  String APIKEY = "{YOUR_APIKEY}";
 
   Future<dynamic> fetchRate(base,target) async{
     //Rates r = new Rates(base: "USD",rates: {"INR":21.123},date: "2");

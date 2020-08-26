@@ -29,7 +29,7 @@ class CryptoConveterState extends State<CryptoConveter> {
             body: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text("Crypto Currency Converter",style: TextStyle(color: Colors.blue,fontSize: 30),),
+                Text("Crypto Currency Converter",style: TextStyle(color: Colors.red,fontSize: 30),),
                 SizedBox(height: 150,),
                 Container(
                   child:
@@ -66,7 +66,7 @@ class CryptoConveterState extends State<CryptoConveter> {
                       SizedBox(width: 80,),
                       Expanded(
                         child:
-                        Text(convertedResult,style: TextStyle(color: Colors.red,fontSize: 20),),
+                        Text(convertedResult,style: TextStyle(color: Colors.blue,fontSize: 20),),
                       ),
                       targetCurrencyList(),
                     ],
