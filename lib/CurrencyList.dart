@@ -34,4 +34,31 @@ class CurrencyList {
     "HUF",
     "SEK"
   ];
+
+  static const currenciesCrypto = <String>[
+    "BTC",
+    "ETH",
+    "USD",
+    "INR",
+    "WRX",
+    "XMR",
+    "XLM",
+    "BNB",
+    "MATIC",
+    "LINK",
+    "EOS",
+    "LTC",
+    "TRX",
+    "USDT",
+    "BAT",
+    "DOGE",
+    "DAI",
+    "JST",
+    "OMG",
+    "SXP",
+    "BAND",
+    "BTT",
+
+    ];
+
 }
