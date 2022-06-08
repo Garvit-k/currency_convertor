@@ -29,7 +29,7 @@ jobs:
         if: "!startsWith(matrix.bot, 'dart')"
         uses: DanTup/gh-actions/setup-flutter@master
         with:
-          channel: ${{ matrix.flutter-version }}
+          channel: 'stable'
       
       - run: flutter update-packages
         if: matrix.bot == 'flutter_repo'
