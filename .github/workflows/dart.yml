@@ -23,6 +23,23 @@ jobs:
       # https://github.com/dart-lang/setup-dart/blob/main/README.md
       # - uses: dart-lang/setup-dart@v1
       - uses: dart-lang/setup-dart@v1.3
+      
+      - name: Setup Flutter ${{ matrix.flutter-version }}
+        id: flutter
+        if: "!startsWith(matrix.bot, 'dart')"
+        uses: DanTup/gh-actions/setup-flutter@master
+        with:
+          channel: ${{ matrix.flutter-version }}
+      
+      - run: flutter update-packages
+        if: matrix.bot == 'flutter_repo'
+
+      - name: Print Dart version
+        run: dart --version
+
+      - name: Print Flutter version
+        if: "!startsWith(matrix.bot, 'dart')"
+        run: flutter --version
 
       - name: Install dependencies
         run: dart pub get
